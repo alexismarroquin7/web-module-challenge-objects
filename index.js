@@ -101,13 +101,13 @@ const reviews = [
     {name: "Reyna", rating: 3.5, feedback: ""},
 ]
 
-// problem above - check codepen adjusting spain
+// problem above - check codepen adjusting spain example
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log(reviews[5]['feedback']);
 
 
 
