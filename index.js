@@ -1,6 +1,7 @@
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
-/*When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.*/
+/*When doing these tasks, we recommend using console.log
+to test the output of your code to make sure it works correctly.*/
 
 ///////////////Menu Items (MVP)///////////////////
 const latte = {name: "Cafe Latte", price: 4, category: "Drinks"};
@@ -9,7 +10,9 @@ const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakf
 // test comment
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1a: Make a function that builds objects🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-Add to the function createMenuItems below so it will create objects following the same format found above for latte and breakfastBurrito (name, price, category).  
+Add to the function createMenuItems below so it will create objects
+following the same format found above
+for latte and breakfastBurrito (name, price, category).  
 The function should:
   1. Receive values for the object that will be created as parameters
   2. Create and return an object using the received values 
@@ -17,20 +20,29 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
+  const tacos = {name, price, category}
+  return tacos;
 }
+
+createMenuItem('tacos', 8, 'Lunch');
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
-Test your createMenuItems function by doing the following:
-  1. Pass values to createMenuItems in order to create the objects (menu items)
-  2. Create at least 3 menu items (objects) of your choosing making sure they have name, price, and category keys
+Test your createMenuItems function by doing 
+the following:
+  1. Pass values to createMenuItems 
+  in order to create the objects (menu items)
+  2. Create at least 3 menu items (objects)
+   of your choosing making sure they have 
+   name, price, and category keys
   3. Log each returned object to the console  
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-
+console.log(createMenuItem('pizza', 5, 'lunch'));
+console.log(createMenuItem('pancakes', 3, 'breakfast'));
+console.log(createMenuItem('parmesan chicken', 5, 'dinner'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -51,6 +63,11 @@ export const burger = {
   price: 18, 
   category: "Lunch", 
   /*Your code here*/
+  discount: function(string){
+    // if string is teacher what is the discount
+    // if string is student what is the discount
+    // if string is public what is the discount
+  }
 }
 
 
@@ -66,6 +83,8 @@ const reviews = [
     {name: "Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."},
     {name: "Reyna", rating: 3.5, feedback: ""},
 ]
+
+// problem above - check codepen adjusting spain
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
