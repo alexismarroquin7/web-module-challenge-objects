@@ -50,25 +50,42 @@ You're having a lunch special! 25% off for teachers and students, 10% off for ev
 burger object below that automatically calculates price depending on the a string received as a parameter. 
 
 Using the burger object below do the following:
-  1. Add a method called discount to the burger object 
-  2. The discount method should accept a string as a parameter (example: "teacher", "student", or "public")
-  3. Depending on the string, it will return the correct discounted price
-  4. Check your work by invoking the function and passing in 'teacher', 'student', or 'public' as your arguments to ensure they are returning the correct price.
+  1. Add a method called discount to 
+  the burger object 
+  2. The discount method should accept 
+  a string as a 
+  parameter (example: "teacher", "student",
+   or "public")
+  3. Depending on the string, it will 
+  return the correct discounted price
+  4. Check your work by invoking the 
+  function and passing in 'teacher', 
+  'student', or 'public' as your arguments
+  to ensure they are returning the correct price.
 
-  For example: burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2
+  For example: burger.discount("teacher") 
+  would return 13.5
+  and burger.discount("public") would return 16.2
 */
 
 export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+  
   discount: function(string){
     // if string is teacher what is the discount
+    if(string === 'teacher' || string === 'student'){
+      let newPrice = this.price * .75;
+      return newPrice;
+    }
+    
     // if string is student what is the discount
     // if string is public what is the discount
   }
 }
+
+console.log(burger.discount('teacher'));
 
 
 
